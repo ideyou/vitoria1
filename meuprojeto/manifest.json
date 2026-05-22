@@ -6,12 +6,12 @@
   "start_url": "./",
   "display": "standalone",
 
-  "theme_color": "#wine",
+  "theme_color": "white",
   "background_color": "#wine",
 
   "icons": [
     {
-      "src": "profile.avif",
+      "src": "vitoria.avif",
       "sizes": "any",
       "type": "image/avif"
     }
