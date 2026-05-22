@@ -1,0 +1,22 @@
+{
+  "id": "mangas",
+  "name": "Vitória",
+  "short_name": "Vitória",
+  "scope": "./",
+  "start_url": "./",
+  "display": "standalone",
+
+  "theme_color": "#wine",
+  "background_color": "#wine",
+
+  "icons": [
+    {
+      "src": "profile.avif",
+      "sizes": "any",
+      "type": "image/avif"
+    }
+  ],
+
+  "app_name": "Vitória Cristina",
+  "description": "Top 3 meus mangás favoritos 🎌📚"
+}
