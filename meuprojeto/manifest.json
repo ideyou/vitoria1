@@ -5,10 +5,12 @@
   "scope": "./",
   "start_url": "./",
   "display": "standalone",
-
-  "theme_color": "white",
-  "background_color": "#wine",
-
+  "theme_color": "#5C101F",
+  "background": {
+    "color": "#F5ECE0",
+    "image": "radial-gradient(circle, rgba(70,40,20,0.18) 1px, transparent 1px), linear-gradient(rgba(245,236,224,0.88), rgba(245,236,224,0.88))",
+    "size": "12px 12px, cover, cover"
+  },
   "icons": [
     {
       "src": "vitoria.avif",
@@ -16,7 +18,6 @@
       "type": "image/avif"
     }
   ],
-
   "app_name": "Vitória Cristina",
   "description": "Top 3 meus mangás favoritos 🎌📚"
 }
