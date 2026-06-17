@@ -1,0 +1,206 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body{
+  background:url("../img/espaco.jpg") center/cover fixed;
+  color:white;
+}
+
+.timeline{
+  display:flex;
+  gap:40px;
+
+  overflow-x:auto;
+
+  padding:50px;
+
+  scroll-behavior:smooth;
+}
+
+.timeline::-webkit-scrollbar{
+  height:10px;
+}
+
+.timeline::-webkit-scrollbar-thumb{
+  background:#00bfff;
+  border-radius:20px;
+}
+
+.planet-card{
+  min-width:320px;
+
+  background:rgba(20,20,50,.8);
+
+  border:1px solid rgba(255,255,255,.15);
+
+  border-radius:20px;
+
+  text-align:center;
+
+  padding:20px;
+
+  backdrop-filter:blur(10px);
+
+  transition:.4s;
+}
+
+.planet-card:hover{
+  transform:translateY(-10px);
+}
+
+.planet-card img{
+  width:220px;
+  height:220px;
+
+  object-fit:cover;
+
+  border-radius:50%;
+
+  margin-bottom:15px;
+}
+
+.planet-card h3{
+  font-size:2rem;
+}
+
+.planet-card p{
+  margin:10px 0;
+}
+
+/* NAVBAR */
+.navbar{
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.5) !important;
+}
+
+/* TITULO */
+h1{
+  text-shadow:
+    0 0 25px rgba(255,255,255,0.6),
+    0 0 50px rgba(0,153,255,0.5);
+}
+
+/* CARDS */
+.card{
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 25px;
+  overflow: hidden;
+  transition: 0.4s ease;
+  animation: aparecer 1s ease;
+  color: white;
+  height: 100%;
+}
+
+.card:hover{
+  transform: translateY(-10px);
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,0.5),
+    0 0 20px rgba(0,153,255,0.4);
+}
+
+/* ANIMAÇÃO DOS CARDS */
+@keyframes aparecer{
+  from{
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* PLANETAS */
+.planeta {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+
+  animation: girar 25s linear infinite;
+
+  transition: transform 0.4s ease;
+}
+
+/* Efeito ao passar o mouse */
+.planeta:hover {
+  animation-play-state: paused;
+  transform: scale(1.08);
+}
+
+/* Rotação */
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* BOTÕES */
+.btn{
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.btn:hover{
+  transform: scale(1.05);
+
+  box-shadow:
+    0 0 15px rgba(0,191,255,0.7),
+    0 0 35px rgba(0,153,255,0.4);
+}
+
+/* BOTÃO PRINCIPAL */
+.btn-primary{
+  background: linear-gradient(45deg,#0066ff,#00bfff);
+  border: none;
+}
+
+/* BOTÃO SECUNDÁRIO */
+.btn-secondary{
+  background: linear-gradient(45deg,#6c757d,#9aa0a6);
+  border: none;
+}
+
+/* TEXTO DOS CARDS */
+.card-text{
+  color: rgba(255,255,255,0.8);
+}
+
+/* FOOTER */
+footer{
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+}
+/* SCROLL SUAVE */
+html{
+  scroll-behavior: smooth;
+}
+.shooting-star{
+  position: fixed;
+  top: 0;
+  left: -100px;
+
+  width: 2px;
+  height: 100px;
+
+  background: white;
+
+  transform: rotate(-45deg);
+
+  animation: estrelaCadente 5s linear infinite;
+}

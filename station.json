@@ -1,0 +1,12 @@
+{
+  "color": "#ffffff",
+  "background_color": "#470715",
+  "icons": [
+    {
+      "src": "profile.avif",
+      "sizes": "any",
+      "type": "image/avif"
+    }
+  ],
+  "name": "Vitória Cristina"
+}

@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>🌌 Universo Explorer</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- MODAL MERCÚRIO -->
+<div class="modal fade" id="modalMercurioInfo" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title">Mercúrio</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Mercúrio é o planeta mais próximo do Sol.</p>
+        <p>Um ano dura apenas 88 dias.</p>
+        <p>Não possui luas.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL CURIOSIDADES MERCÚRIO -->
+<div class="modal fade" id="modalMercurioCuriosidades" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-white">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Curiosidades sobre Mercúrio</h5>
+
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="modal">
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p>🌡️ 1. O planeta com temperaturas extremas
+         Apesar de ser o mais próximo do Sol, Mercúrio não é o mais quente!
+         Durante o dia: até 430 °C
+         À noite: pode cair para -180 °C
+         Isso acontece porque ele praticamente não tem atmosfera para reter calor..</p>
+        <p>⏱️ 2. Um dia dura mais que um ano
+          Um ano em Mercúrio (volta ao redor do Sol) dura 88 dias terrestres.
+          Mas um dia completo (de nascer a nascer do Sol) leva 176 dias terrestres!</p>
+        <p>🌘 3. Parece a Lua
+         A superfície de Mercúrio é cheia de crateras, bem parecida com a da Lua, devido ao impacto de meteoros ao longo de bilhões de anos.</p>
+        <p>🚀 4. Já foi visitado por sondas
+         Poucas missões chegaram até lá por causa do calor extremo e da gravidade do Sol.
+         Destaques:
+         Mariner 10 (anos 1970)
+         MESSENGER (2004–2015), que mapeou grande parte do planeta</p>
+         <p>🧲 5. Tem campo magnético (e isso é raro!)
+           Mesmo sendo pequeno, Mercúrio possui um campo magnético — algo incomum para planetas do seu tamanho.</p>
+          <p>☄️ 6. Não tem luas nem anéis
+            Diferente de muitos planetas, Mercúrio não possui nenhum satélite natural nem sistema de anéis.</p> 
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MODAL VÊNUS -->
+<div class="modal fade" id="modalVenusInfo" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title">Vênus</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Vênus é o planeta mais próximo da Terra.</p>
+        <p>Um ano dura apenas 225 dias.</p>
+        <p>Não possui luas.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL CURIOSIDADES VÊNUS -->
+<div class="modal fade" id="modalVenusCuriosidades" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-white">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Curiosidades sobre Vênus</h5>
+
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="modal">
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p>🌡️ 1. O planeta mais quente do Sistema Solar
+          Apesar de não ser o planeta mais próximo do Sol, Vênus é o mais quente de todos.
+          Temperatura média: cerca de 465 °C
+          É mais quente que Mercúrio, mesmo estando mais distante do Sol.
+          Isso acontece por causa do intenso efeito estufa em sua atmosfera.</p>
+        <p>☁️ 2. Possui uma atmosfera extremamente densa
+         A atmosfera de Vênus é muito diferente da da Terra.
+         É composta principalmente por dióxido de carbono (CO₂).
+         Possui nuvens de ácido sulfúrico.
+         A pressão na superfície é cerca de 90 vezes maior que a da Terra.</p>
+        <p>🔄 3. Gira ao contrário da maioria dos planetas 
+         Vênus possui uma rotação retrógrada.
+         O Sol nasce no oeste e se põe no leste.
+         É um dos poucos planetas do Sistema Solar com esse comportamento.</p>
+        <p> ⏳ 4. Um dia dura mais que um ano
+         O movimento de rotação de Vênus é extremamente lento.
+         Um ano venusiano dura 225 dias terrestres.
+         Um dia venusiano dura 243 dias terrestres.</p>
+        <p>🌍 5. É chamado de "planeta irmão" da Terra
+         Vênus tem características físicas semelhantes às da Terra.
+         Possui tamanho e massa parecidos com os do nosso planeta.
+         No entanto, suas condições são extremamente hostis à vida.</p>
+        <p>✨ 6. É um dos objetos mais brilhantes do céu
+          Depois do Sol e da Lua, Vênus costuma ser o astro mais brilhante visto da Terra.
+          Pode ser observado a olho nu.
+          É conhecido popularmente como "Estrela-d'Alva" ou "Estrela Vespertina".</p>
+        <p>🚀 7. Já foi visitado por diversas sondas
+          Vênus recebeu várias missões espaciais ao longo da história.
+          Venera foi o primeiro programa a pousar sondas em outro planeta.
+          Algumas sondas conseguiram transmitir imagens da superfície venusiana.</p>
+        <p>🌋 8. Pode ter vulcões ativos
+          Pesquisas recentes indicam que Vênus pode ainda apresentar atividade vulcânica.
+          O planeta possui milhares de vulcões.
+          Alguns deles podem estar ativos atualmente.</p>
+        <p>🌕 9. Não possui luas nem anéis
+          Assim como Mercúrio, Vênus não possui satélites naturais nem anéis.
+          Nenhuma lua orbita o planeta.
+          Também não existe um sistema de anéis ao seu redor.</p>
+        <p>🏔️ 10. Possui montanhas gigantes
+          A superfície de Vênus apresenta grandes cadeias montanhosas.
+          O ponto mais alto é Maxwell Montes.
+          Essa montanha possui cerca de 11 quilômetros de altura, semelhante ao tamanho do Monte Everest.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MODAL TERRA -->
+<div class="modal fade" id="modalTerraInfo" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title">Terra</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Terra é um mundo rochoso e o único lugar conhecido no universo que abriga vida.</p>
+        <p>Um ano dura apenas 365 dias.</p>
+        <p>Possui 1 lua.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL CURIOSIDADES TERRA -->
+<div class="modal fade" id="modalTerraCuriosidades" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-white">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Curiosidades sobre Terra</h5>
+
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="modal">
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p>🌎 Um planeta cheio de vida
+          A Terra é o único planeta conhecido que abriga vida. Isso acontece graças à combinação perfeita de fatores como água líquida, temperatura adequada e uma atmosfera rica em oxigênio.</p>
+        <p>🌊 Mais água do que terra
+          Cerca de 71% da superfície da Terra é coberta por água, principalmente oceanos. Por isso, às vezes ela é chamada de “planeta azul”.</p>
+        <p>🌍 Não é uma esfera perfeita
+         Apesar de parecer uma bola, a Terra é ligeiramente achatada nos polos. Esse formato é chamado de
+         esferoide oblato — resultado da rotação do planeta.</p>
+        <p>🌪️ A atmosfera nos protege
+         A atmosfera funciona como um escudo:
+         Filtra radiação solar perigosa
+         Queima a maioria dos meteoros antes que atinjam o solo
+         Mantém a temperatura estável</p>
+        <p>🌋 A Terra está “viva” por dentro
+         O interior da Terra é extremamente quente e dinâmico. O movimento das placas tectônicas causa terremotos, vulcões e até a formação de montanhas.</p>
+        <p>🧭 O campo magnético é essencial
+         A Terra possui um campo magnético que protege o planeta contra partículas solares. Sem ele, a vida como conhecemos seria praticamente impossível.</p>
+        <p>⏳ O dia não tem exatamente 24 horas
+         Na verdade, um dia completo dura cerca de 23 horas, 56 minutos e 4 segundos — o tempo que a Terra leva para dar uma volta completa em relação às estrelas.</p>
+        <p>🌕 A Lua influencia a Terra
+         Nosso satélite natural regula as marés e ajuda a estabilizar a inclinação do planeta, o que é importante para o clima.</p>
+        <p>🌩️ Caiem cerca de 100 raios por segundo no planeta
+         A todo momento, milhares de tempestades acontecem ao redor do mundo. Em média, cerca de 8 milhões de raios atingem a Terra todos os dias.</p>
+        <p>🏜️ Existe um deserto na Antártica
+         Antártica é considerada um deserto porque recebe muito pouca precipitação ao longo do ano. Algumas áreas passam décadas sem registrar chuva ou neve significativa.</p>
+        <p>🌊 O oceano é mais desconhecido que a Lua
+         Os seres humanos já mapearam completamente a superfície da Lua, mas uma grande parte do fundo dos oceanos terrestres ainda não foi explorada em detalhes</p>
+        <p>🗻 A montanha mais alta nem sempre é o Everest
+         Quando medida a partir da base até o topo, a montanha mais alta da Terra é o vulcão submarino Mauna Kea. Grande parte dele está abaixo do nível do mar.</p>
+        <p>🌍 Os continentes estão em movimento
+         As placas tectônicas se movem alguns centímetros por ano. Daqui a milhões de anos, os continentes terão posições completamente diferentes das atuais.</p>
+        <p>🧊 Já existiram períodos em que quase toda a Terra ficou congelada
+         Os cientistas acreditam que, há centenas de milhões de anos, ocorreu o fenômeno conhecido como Terra Bola de Neve, quando gelo cobriu grande parte do planeta.</p>
+        <p>🌡️ O lugar mais quente e o mais frio da Terra são extremos
+         A temperatura mais alta registrada foi de 56,7 °C em Vale da Morte. Já a mais baixa foi de -89,2 °C na Estação Vostok.</p>
+        <p>💎 Chove diamantes em outros planetas
+         Embora isso não aconteça na Terra, cientistas acreditam que em planetas como Netuno e Urano a pressão é tão grande que pode transformar carbono em diamantes que caem como chuva.</p>
+        <p>🌳 Uma única árvore pode sustentar centenas de espécies
+         Algumas árvores tropicais servem de abrigo para insetos, aves, fungos, mamíferos e plantas, formando pequenos ecossistemas completos.</p>
+        <p>☄️ A Terra recebe cerca de 100 toneladas de poeira espacial por dia
+         Pequenos fragmentos vindos do espaço entram constantemente na atmosfera e acabam depositados na superfície do planeta.</p>
+        <p>Uma curiosidade especialmente surpreendente é que todos os átomos de ferro presentes no seu sangue foram produzidos no interior de estrelas que explodiram há bilhões de anos. Em certo sentido, todos nós somos feitos de matéria estelar. ✨🌍</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- MODAL MARTE -->
+<div class="modal fade" id="modalMarteInfo" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title">Marte</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Marte conhecido como planeta vermelho.</p>
+        <p>Um ano dura apenas 687 dias.</p>
+        <p>Possui 2 luas.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL JÚPITER -->
+<div class="modal fade" id="modalJupiterInfo" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title">Júpiter</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Júpiter é o maior e mais massivo planeta do Sistema Solar.</p>
+        <p>Um ano dura apenas 4.333 dias.</p>
+        <p>Possui 92 luas.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL SATURNO -->
+<div class="modal fade" id="modalSaturnoInfo" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title">Saturno</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Saturno é o segundo maior planeta do Sistema Solar.</p>
+        <p>Um ano dura apenas 10.759 dias.</p>
+        <p>Possui 146 luas.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL URANO -->
+<div class="modal fade" id="modalUranoInfo" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title">Urano</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Urano conhecido como um gigante gelado.</p>
+        <p>Um ano dura apenas 30.687 dias.</p>
+        <p>Possui 27 luas.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL NETUNO -->
+<div class="modal fade" id="modalNetunoInfo" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title">Netuno</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Netuno é o oitavo e mais distante planeta do Sistema Solar a partir do Sol.</p>
+        <p>Um ano dura apenas 60.190 dias.</p>
+        <p>Possui 14 luas.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="stars"></div>
+  <div class="shooting-star"></div>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="navbar navbar-dark shadow-sm">
+      <div class="container">
+
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <strong>🌌 Universo Explorer</strong>
+        </a>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+
+        <div class="col-lg-8 col-md-10 mx-auto">
+
+          <h1 class="display-2 fw-bold text-white">
+            Sistema Solar
+          </h1>
+
+          <p class="lead text-light mt-4">
+            Explore os planetas do Sistema Solar e descubra
+            curiosidades incríveis sobre cada um deles.
+          </p>
+
+          <p class="mt-4">
+            <a href="#planetas" class="btn btn-primary btn-lg me-2">
+              Explorar
+            </a>
+
+            <a href="#" class="btn btn-secondary btn-lg">
+              Curiosidades
+            </a>
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANETAS -->
+    <div id="planetas" class="album py-5">
+      <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+          <!-- MERCÚRIO -->
+          <div class="col">
+            <div class="card shadow-sm h-100" style="animation-delay: .2s">
+
+             <img
+               src="img/mercurio.jpg"
+               class="planeta"
+               alt="Planeta Mercúrio"
+             >
+
+              <div class="card-body text-center">
+
+                <h4 class="fw-bold">Mercúrio</h4>
+
+                <p class="card-text">
+                  O menor planeta do Sistema Solar e o mais próximo do Sol.
+                </p>
+
+                <p>
+                  ☀️ Distância do Sol: 57 milhões km
+                </p>
+
+                <p>
+                  🌡️ Temperatura: 167°C
+                </p>
+
+                <div class="d-flex justify-content-center gap-2 mt-3">
+
+                  <button
+                    class="btn btn-outline-light btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalMercurioInfo">
+                    Ver
+                  </button>
+
+                  <button
+                    class="btn btn-outline-info btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalMercurioCuriosidades">
+                    Curiosidades
+                  </button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- VÊNUS -->
+          <div class="col">
+            <div class="card shadow-sm h-100" style="animation-delay: .2s">
+
+             <img
+               src="img/venus.jpg"
+               class="planeta"
+               alt="Planeta Vênus"
+             >
+
+              <div class="card-body text-center">
+
+                <h4 class="fw-bold">Vênus</h4>
+
+                <p class="card-text">
+                  O segundo planeta a partir do Sol e um dos mais quentes.
+                </p>
+
+                <p>
+                  ☀️ Distância do Sol: 108 milhões km
+                </p>
+
+                <p>
+                🌡️ Temperatura: 462°C
+                </p>
+
+                <div class="d-flex justify-content-center gap-2 mt-3">
+
+                  <button
+                    class="btn btn-outline-light btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalVenusInfo">
+                    Ver
+                  </button>
+
+                  <button
+                   class="btn btn-outline-info btn-sm"
+                   data-bs-toggle="modal"
+                   data-bs-target="#modalVenusCuriosidades">
+                   Curiosidades
+                   </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- TERRA -->
+          <div class="col">
+            <div class="card shadow-sm h-100" style="animation-delay: .4s">
+
+              <img
+                src="img/terra.jpg"
+                class="planeta"
+                alt="Planeta Terra"
+              >
+
+              <div class="card-body text-center">
+
+                <h4 class="fw-bold">Terra</h4>
+
+                <p class="card-text">
+                  Nosso planeta, o único conhecido com vida.
+                </p>
+
+                <p>
+                  ☀️ Distância do Sol: 150 milhões km
+                </p>
+
+                <p>
+                  🌡️ Temperatura: 15°C
+                </p>
+
+                <div class="d-flex justify-content-center gap-2 mt-3">
+
+                  <button
+                    class="btn btn-outline-light btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalTerraInfo">
+                    Ver
+                  </button>
+
+                  <button
+                   class="btn btn-outline-info btn-sm"
+                   data-bs-toggle="modal"
+                   data-bs-target="#modalTerraCuriosidades">
+                   Curiosidades
+                  </button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- MARTE -->
+          <div class="col">
+           <div class="card shadow-sm h-100" style="animation-delay: .4s">
+
+             <img
+              src="img/marte.jpg"
+              class="planeta"
+              alt="Planeta Marte"
+             >
+
+              <div class="card-body text-center">
+
+                <h4 class="fw-bold">Marte</h4>
+
+                <p class="card-text">
+                  Conhecido como o planeta vermelho.
+                </p>
+
+                <p>
+                  ☀️ Distância do Sol: 228 milhões km
+                </p>
+
+                <p>
+                  🌡️ Temperatura: -65°C
+                </p>
+
+                <div class="d-flex justify-content-center gap-2 mt-3">
+
+                  <button
+                   class="btn btn-outline-light btn-sm"
+                   data-bs-toggle="modal"
+                   data-bs-target="#modalMarteInfo">
+                   Ver
+                  </button>
+
+                  <button class="btn btn-outline-info btn-sm">
+                    Curiosidades
+                  </button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- JÚPITER -->
+          <div class="col">
+            <div class="card shadow-sm h-100" style="animation-delay: .4s">
+
+              <img
+                src="img/jupiter.jpg"
+                class="planeta"
+                alt="Planeta Júpiter"
+              >
+
+              <div class="card-body text-center">
+
+                <h4 class="fw-bold">Júpiter</h4>
+
+                <p class="card-text">
+                  O maior planeta do Sistema Solar.
+                </p>
+
+                <p>
+                  ☀️ Distância do Sol: 778 milhões km
+                </p>
+
+                <p>
+                  🌡️ Temperatura: -110°C
+                </p>
+
+                <div class="d-flex justify-content-center gap-2 mt-3">
+
+                  <button
+                    class="btn btn-outline-light btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalJupiterInfo">
+                    Ver
+                  </button>
+
+                  <button class="btn btn-outline-info btn-sm">
+                    Curiosidades
+                  </button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- SATURNO -->
+          <div class="col">
+            <div class="card shadow-sm h-100" style="animation-delay: .6s">
+
+              <img
+                src="img/saturno.jpg"
+                class="planeta"
+                alt="Planeta Saturno"
+              >
+
+              <div class="card-body text-center">
+
+                <h4 class="fw-bold">Saturno</h4>
+
+                <p class="card-text">
+                  Famoso pelos seus incríveis anéis.
+                </p>
+
+                <p>
+                  ☀️ Distância do Sol: 1,4 bilhões km
+                </p>
+
+                <p>
+                  🌡️ Temperatura: -140°C
+                </p>
+
+                <div class="d-flex justify-content-center gap-2 mt-3">
+
+                  <button
+                    class="btn btn-outline-light btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalSaturnoInfo">
+                    Ver
+                  </button>
+
+                  <button class="btn btn-outline-info btn-sm">
+                    Curiosidades
+                  </button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+            <!-- NETUNO -->
+            <div class="col">
+            <div class="card shadow-sm h-100" style="animation-delay: .6s">
+
+             <img
+               src="img/netuno.jpg"
+               class="planeta"
+               alt="Planeta Netuno"
+             >
+
+              <div class="card-body text-center">
+
+                <h4 class="fw-bold">Netuno</h4>
+
+                <p class="card-text">
+                  Classificado como um gigante de gelo
+                </p>
+
+                <p>
+                  ☀️ Distância do Sol: 4,5 bilhões km
+                </p>
+
+                <p>
+                  🌡️ Temperatura: -220°C
+                </p>
+
+                <div class="d-flex justify-content-center gap-2 mt-3">
+
+                  <button
+                    class="btn btn-outline-light btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalNetunoInfo">
+                    Ver
+                  </button>
+
+                  <button class="btn btn-outline-info btn-sm">
+                    Curiosidades
+                  </button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+              <!-- urano -->
+              <div class="col">
+              <div class="card shadow-sm h-100" style="animation-delay: .6s">
+
+             <img
+               src="img/urano.jpg"
+               class="planeta"
+               alt="Planeta Urano"
+             >
+
+              <div class="card-body text-center">
+
+                <h4 class="fw-bold">Urano</h4>
+
+                <p class="card-text">
+                  Classificado como um gigante de gelo
+                </p>
+
+                <p>
+                  ☀️ Distância do Sol: 2,87 bilhões km
+                </p>
+
+                <p>
+                  🌡️ Temperatura: -214°C
+                </p>
+
+                <div class="d-flex justify-content-center gap-2 mt-3">
+
+                  <button
+                    class="btn btn-outline-light btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalUranoInfo">
+                    Ver
+                  </button>
+                  <button class="btn btn-outline-info btn-sm">
+                    Curiosidades
+                  </button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-light py-4 text-center">
+
+    <div class="container">
+
+      <p class="mb-2">
+        🌌 Universo Explorer
+      </p>
+
+      <p class="mb-0">
+        Projeto criado com HTML, CSS e Bootstrap 5
+      </p>
+
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
